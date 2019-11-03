@@ -1,0 +1,2 @@
+FLASK_APP=flaskmongoengine
+FLASK_ENV=development
