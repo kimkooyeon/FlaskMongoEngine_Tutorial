@@ -5,6 +5,7 @@ from .extensions import mongo
 from .main import main
 
 
+
 def create_app(config_object='flaskmongoengine.settings'):
     app = Flask(__name__)
 
@@ -13,5 +14,7 @@ def create_app(config_object='flaskmongoengine.settings'):
     mongo.init_app(app)
 
     app.register_blueprint(main)
+
+    app.config['MONGODB_']
 
     return app
